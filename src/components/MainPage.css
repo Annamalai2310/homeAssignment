@@ -1,0 +1,257 @@
+.toggle-container {
+    text-align: center;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: auto;
+    background-image: url('./buddha.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size:contain;
+  }
+
+  .window {
+    width: 25%;
+    background-color: rgb(252, 236, 223);
+    transition: transform 0.3s ease-in-out;
+    display:flow-root;
+    margin-right: 3em;
+    flex-direction: column;
+    box-sizing:initial;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .window.closed {
+    transform: translateX(-100%);
+    margin-left:5px;
+    margin-top: 0;
+  }
+
+  .window.open {
+    transform: translateX(0);
+    max-width: 800px;
+    background-color: rgb(252, 236, 223);
+    margin-left: 0;
+
+  }
+
+    div{
+        line-height: 1.4em;
+        text-align: left;
+        padding-right: 10px;
+        padding-left: 1px;
+    }
+
+    svg.back-button{
+        border: 0.5;
+        border-style: hidden;
+        background-color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-left:0;
+    }
+
+    .button-position {
+        margin-left: 97%;
+        position:relative;
+        color: orange;
+        font-size: 20px;
+        border: 0;
+        border-radius: 20%;
+        cursor: pointer;
+      }
+
+    h1 {
+        font-size: 28px;
+        font-weight: 400;
+        word-spacing: 0.5em;
+        line-height: 1.18em;
+        text-align: left;
+        margin: 7px;
+        letter-spacing: 1.5px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+
+    svg.icon-first{
+        border: 0.5;
+        border-style: hidden;
+        background-color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-left: 1em;
+        margin-right: 2em;
+    }
+
+    label.firsti{
+        margin-left: 1.5em;
+    }
+
+    svg.icon {
+        border: 0.5;
+        border-style: hidden;
+        background-color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    label {
+        margin-left: 2.4em;
+        margin-right: 1.8em;
+        font-size: 21px;
+    }
+
+    div.summary{
+        margin: 2em 0.5em 0.5em 0.5em;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    div.description {
+        margin-left: 0.5em;
+    }
+
+    p.desc {
+      color: rgb(112, 108, 108);
+      font-size: 14px;
+      line-height: normal;
+    }
+
+  svg.rightarrow{
+    color: orange;
+    margin-top: 1em;
+    margin-right: 0.5em;
+    margin-left: -0.75em;
+  }
+
+  span{
+    font-size: 20px;
+    letter-spacing: 0.25em;
+    color: orange;
+    margin-top: -0.5em;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+
+  div.readmore{
+    margin-left: 0.5em;
+    align-items: start;
+    cursor: pointer;
+  }
+
+  button.addToCollection{
+    background-color: Orange;
+    color:white ;
+    border-width:3px;
+    border-color: white;
+    cursor: pointer;
+    padding: 1em;
+    margin: 1em;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  button.souvenir{
+    background-color: white;
+    color: orange ;
+    border-color: orange;
+    border-width: 3px;
+    cursor: pointer;
+    padding: 1em;
+    margin: 0.5em;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 1440px) {
+
+    .toggle-container {
+      background-size:contain;
+      background-position: top;
+    }
+
+    .window {
+        width: 37%;
+
+      }
+
+    svg.icon-first{
+        margin-left: 0.5em;
+        margin-right: 1em;
+        margin-top: 1.5em;
+    }
+
+    svg.icon {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    label.firsti{
+        margin-left: 1.6rem;
+        margin-right: 0.8em;
+    }
+
+    label {
+        margin-left: 2em;
+        margin-right: 0.5em;
+    }
+
+    button.addToCollection{
+        margin-top: 4em;
+        align-self: center;
+    }
+
+    button.souvenir{
+        padding: 1em;
+        margin-left: 1.5em;
+        align-self: center;
+      }
+
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .window {
+        width: 55%;
+      }
+
+    label {
+        margin-left: 2em;
+        margin-right: 0.5em;
+    }
+
+  }
+
+  @media screen and (max-width: 430px) {
+
+    .button-position {
+        margin-left: 92%;
+      }
+
+    label.firsti{
+        margin-left: 1.4em;
+        margin-right: 1.5em;
+    }
+
+    .window {
+        width: 100%;
+      }
+
+      svg.icon {
+        margin-left: 0.75em;
+        margin-right: 0.75em;
+    }
+
+    label {
+        margin-left: 1em;
+        margin-right: 1.2em;
+    }
+
+    svg.icon-first{
+        margin-left: 0.75em;
+        margin-right: 1em;
+    }
+
+  }
